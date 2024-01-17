@@ -1,0 +1,28 @@
+customer portal:
+1.Registration(customer)
+2.login(customer)
+3.verify token
+4.customer location selection
+5.sorted service providers list based on nearest location and required specialization 
+6.when book now button is clicked, check status of login, if not looged in, redirect to login page.
+7.selection of date and time and proceed to payment
+8.payment page api
+9.user booking status management(status monitoring)
+10.providing feedback
+
+partner portal:
+1.Registration- based on type inputs are collected(partner)
+2.login(partner)
+3.verify token
+4.bookings management api- if the status is completed can generate invoice
+requested 20
+ongoing 15
+completed 10 invoice
+5.gerenate invoice api
+
+admin portal:
+1.Registration- based on type inputs are collected(admin)
+2.login(admin)
+3.verify token
+4.display and manage bookings api
+5.manage permissions api- block users, provide access,remove account

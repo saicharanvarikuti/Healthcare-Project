@@ -1,0 +1,85 @@
+register
+{
+    "FIRST_NAME": "Sandeep",
+    "LAST_NAME": "C",
+    "GENDER": "MALE",
+    "DOB": "1995-12-12",
+    "WEIGHT": 62,
+    "ADDRESS": "Delhi",
+    "PHONENUMBER": "5121515451",
+    "EMAILID": "r@gmail.com",
+    "PASSWORD": "bfhsds",
+}
+
+partnerRegister
+{
+    "PARTNER_NAME": "doctor1 clinic",
+    "EMAILID": "doctor1@gmail.com",
+    "PASSWORD": "doctor1@123",
+    "SERVICE_TYPE":"doctor"
+}
+
+doctorInformation
+{
+    "FIRST_NAME": "doctor1 FIRST NAME",
+    "LAST_NAME": "doctor1 SECOND NAME",
+    "IMAGE_URL": "ABCD",
+    "SPECIALIZATION": "ENT",
+    "LOCATION": "DELHI",
+    "FEE":"600"
+}
+
+therapyInformation
+{
+    "THERAPY_NAME": "Therapy1 NAME",
+    "DESCRIPTION": "Therapy1 description",
+    "IMAGE_URL": "ABCD",
+    "LOCATION": "DELHI",
+    "FEE":"600"
+}
+
+nurseServiceInformation
+{
+    "NURSE_SERVICE_NAME": "nurse1 NAME",
+    "DESCRIPTION": "nurse1 description",
+    "IMAGE_URL": "ABCD",
+    "LOCATION": "DELHI",
+    "FEE":"600"
+}
+
+partnerLogin
+{
+    "EMAILID": "doctor1@gmail.com",
+    "PASSWORD": "doctor1@123"
+}
+
+search
+{
+    "searchQuery": "ent"
+}
+
+scheduleAppointment
+{
+	"DOCTOR_ID": "1",
+	"DATE":"2024-01-10",
+	"LOCATION": "bengaluru",
+	"USER_REMARKS": "pain in left ear"
+	}
+
+
+delete express()
+implement validation
+payment api
+implement try catch for every api
+
+
+
+200 OK: The request was successful.
+201 Created: The request was successful, and a new resource was created.
+204 No Content: The server successfully processed the request, but there is no content to send back.
+400 Bad Request: The server could not understand the request due to bad syntax.
+401 Unauthorized: Authentication is required and has failed or has not been provided.
+403 Forbidden: The server understood the request, but it refuses to authorize it.
+404 Not Found: The server did not find the requested resource.
+500 Internal Server Error: A generic error message returned when an unexpected condition was encountered on the server.
+503 Service Unavailable: The server is not ready to handle the request. Common causes include a server that is down for maintenance or that is overloaded.
