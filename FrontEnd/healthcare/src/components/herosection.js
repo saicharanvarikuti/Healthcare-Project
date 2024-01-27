@@ -12,7 +12,7 @@ function Homehero() {
             <div className='flex'>
                 <h1 className='text-6xl text-black font-bold'>whistler's </h1>
                 <div className='w-4'></div>
-                <h1 className='text-6xl text-green-600 font-bold'>healthcare</h1>
+                <h1 className='text-6xl text-green font-bold'>healthcare</h1>
             </div>
             <p className='font-semibold text-xl mt-4'>Your complete wellness hub</p>
             <p className='text-center mt-10 w-4/5'>At Whistler’s Health Care, we're here to revolutionize your healthcare experience. </p>

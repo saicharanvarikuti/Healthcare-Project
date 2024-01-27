@@ -1,24 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles.css';
-import Navbar from './components/navbar';
-import Searchbar from './components/searchbar';
+import Home from './components/Homepage';
+import ServicesPage from './components/Servicespage'
+import ShowDoctors from './components/showdoctorspage';
+import DoctorAppointmentBooking from './components/doctorappointmentbook';
+import LoginPage from './components/loginpage';
 import reportWebVitals from './reportWebVitals';
-import Homehero from './components/herosection';
-import ServicesSection from './components/services_landingpage'
-import Technology from './components/technology'
-import Testimonial from './components/testimonial';
-import Footer from './components/footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
-    <Searchbar />
-    <Homehero/>
-    <ServicesSection/>
-    <Technology/>
-    <Testimonial/>
-    <Footer/>
+    <Router>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/services' element={<ServicesPage />}/>
+          <Route path='/showdoctors' element={<ShowDoctors />}/>
+          <Route path='/doctorappointmentbooking' element={<DoctorAppointmentBooking />}/>
+          <Route path='/login' element={<LoginPage/>}/>
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
