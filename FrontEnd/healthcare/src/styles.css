@@ -1,3 +1,26 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../public/fonts/Pacifico-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'mali';
+    src: url('../public/fonts/Mali-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'varela-round';
+    src: url('../public/fonts/VarelaRound-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'inter';
+    src: url('../public/fonts/Inter-SemiBold.ttf') format('truetype');
+    src: url('../public/fonts/Inter-Regular.ttf') format('truetype');
+    src: url('../public/fonts/Inter-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'merriweather';
+    src: url('../public/fonts/Merriweather-Bold.ttf') format('truetype');
+}

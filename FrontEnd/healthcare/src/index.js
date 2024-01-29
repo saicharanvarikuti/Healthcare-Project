@@ -8,6 +8,8 @@ import ShowDoctors from './components/showdoctorspage';
 import DoctorAppointmentBooking from './components/doctorappointmentbook';
 import LoginPage from './components/loginpage';
 import reportWebVitals from './reportWebVitals';
+import SelectPartner from './components/viewpartners';
+import DoctorDetails from './components/doctordetails';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +20,8 @@ ReactDOM.render(
           <Route path='/showdoctors' element={<ShowDoctors />}/>
           <Route path='/doctorappointmentbooking' element={<DoctorAppointmentBooking />}/>
           <Route path='/login' element={<LoginPage/>}/>
+          <Route path='/selectDoctor' element={<SelectPartner/>}/>
+          <Route path='/doctorDetails' element={<DoctorDetails/>}/>
       </Routes>
     </Router>
   </React.StrictMode>,
