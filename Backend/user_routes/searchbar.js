@@ -9,7 +9,6 @@ router.post('/search', async(req, res) => {
         const searchQuery = req.body.searchQuery.toLowerCase();
         const searchResults = await database.promise().query(`SELECT * FROM DOCTORS WHERE LOWER(FIRST_NAME) LIKE '%${searchQuery}%' OR LOWER(LAST_NAME) LIKE '%${searchQuery}%' OR LOWER(SPECIALIZATION) LIKE '%${searchQuery}%'`);
         res.status(200).json(searchResults[0]);
-        console.log(searchResults[0]);
 });
 
 module.exports = router;

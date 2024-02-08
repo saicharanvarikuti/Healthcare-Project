@@ -18,10 +18,11 @@ router.post('/login',(req,res)=>{
     {
       if(results.length === 0){
         console.log("user does not exist, please register")
-        res.status(404).json("user does not exist, please register")
+        res.status(404).json({message:"user does not exist, please register"})
       }
       else{
         const userStatusCheck = await database.promise().query('SELECT STATUS FROM USERS WHERE EMAILID = ?',req.body.EMAILID)
+        console.log(userStatusCheck[0][0].STATUS)
         if (userStatusCheck[0][0].STATUS === "ACTIVE") {
           const passwordCompare = await bcrypt.compare(req.body.PASSWORD, results[0].PASSWORD)
           if (passwordCompare) {

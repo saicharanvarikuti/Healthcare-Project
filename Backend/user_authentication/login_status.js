@@ -15,6 +15,7 @@ function loginStatusCheck(req,res,next){
         jwt.verify(token, jwtSecretKey, (err, decoded) => {
             if (err) {
                 res.redirect('/login');
+                console.log("session expired, please login again")
             }
             else{
                 req.user = decoded;

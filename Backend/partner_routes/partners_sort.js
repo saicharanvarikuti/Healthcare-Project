@@ -18,4 +18,16 @@ router.get('/doctors/:specialization',(req, res) => {
     })
 })
 
+router.get('/doctors',(req,res) => {
+  database.query('SELECT * FROM DOCTORS',(err,results)=>{
+    if (err) {
+        console.error('Error querying the database: ',err);
+        res.status(500).send('Internal Server Error');
+      }
+      else{
+        res.status(200).json(results);
+      }
+})
+})
+
 module.exports = router;
