@@ -21,22 +21,28 @@ function MyBookings({selectedBooking, setSelectedBooking}) {
       });
   }, []);
 
+<<<<<<< HEAD
 //   useEffect(() => {
 //     if (selectedBooking) {
 //         navigateToViewBooking(selectedBooking);
 //     }
 // }, [selectedBooking]);
 
+=======
+>>>>>>> c5aa4c5825dd8a5c1129843b2f1106c14ac4515a
 const handleViewBooking = (booking) => {
   setSelectedBooking(booking);
   navigate('/viewbooking', { state: { selectedBooking: booking } });  
 };
+<<<<<<< HEAD
 
 // useEffect(() => {
 //   if (selectedBooking) {
 //     navigate('/viewbooking', { state: { selectedBooking } });
 //   }
 // }, [selectedBooking]);
+=======
+>>>>>>> c5aa4c5825dd8a5c1129843b2f1106c14ac4515a
   
   const handleCancelBooking = (bookingId) => {
     if (window.confirm('Are you sure you want to cancel this appointment?')) {

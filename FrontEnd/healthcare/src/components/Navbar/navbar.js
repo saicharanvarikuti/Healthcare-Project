@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import WhistlersLogoColor from '../Images/WhistlersLogoColor.png';
+<<<<<<< HEAD
 import accountCircle from '../Images/accountcircle-black.svg';
+=======
+import accountCircle from '../Images/accountcircle.svg';
+>>>>>>> c5aa4c5825dd8a5c1129843b2f1106c14ac4515a
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {

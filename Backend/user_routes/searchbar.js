@@ -5,6 +5,7 @@ const database = require("../database/database");
 
 router.use(bodyParser.json());
 
+<<<<<<< HEAD
 router.post('/search', async (req, res) => {
     const searchQuery = req.body.searchQuery.toLowerCase();
 
@@ -41,6 +42,12 @@ router.post('/search', async (req, res) => {
         console.error(error);
         res.status(500).json({ error: 'Internal Server Error' });
     }
+=======
+router.post('/search', async(req, res) => {
+        const searchQuery = req.body.searchQuery.toLowerCase();
+        const searchResults = await database.promise().query(`SELECT * FROM DOCTORS WHERE LOWER(FIRST_NAME) LIKE '%${searchQuery}%' OR LOWER(LAST_NAME) LIKE '%${searchQuery}%' OR LOWER(SPECIALIZATION) LIKE '%${searchQuery}%'`);
+        res.status(200).json(searchResults[0]);
+>>>>>>> c5aa4c5825dd8a5c1129843b2f1106c14ac4515a
 });
 
 module.exports = router;

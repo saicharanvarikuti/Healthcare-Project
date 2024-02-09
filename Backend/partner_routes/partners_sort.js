@@ -30,6 +30,7 @@ router.get('/doctors',(req,res) => {
 })
 })
 
+<<<<<<< HEAD
 router.get('/therapies',(req,res) => {
   database.query('SELECT * FROM THERAPIES',(err,results)=>{
     if (err) {
@@ -54,4 +55,6 @@ router.get('/nurse',(req,res) => {
 })
 })
 
+=======
+>>>>>>> c5aa4c5825dd8a5c1129843b2f1106c14ac4515a
 module.exports = router;

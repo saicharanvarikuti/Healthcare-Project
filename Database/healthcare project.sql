@@ -5,11 +5,14 @@ select * from users;
 select * from partners;
 select * from doctors;
 select * from BOOKINGS;
+<<<<<<< HEAD
 select * from ENQUIRY;
 select * from THERAPIES;
 select * from NURSE_SERVICES;
 
 -- UPDATE NURSE_SERVICES SET PARTNER_ID = 20 WHERE NURSE_SERVICE_ID = 6;
+=======
+>>>>>>> c5aa4c5825dd8a5c1129843b2f1106c14ac4515a
 -- select * from therapies;
 -- select * from invoice;
 -- select * from nurse_services;
@@ -128,7 +131,10 @@ CREATE TABLE IF NOT EXISTS ENQUIRY (
     PHONE_NUM VARCHAR(255) NOT NULL,
     MESSAGE VARCHAR(255) NOT NULL
 );
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5aa4c5825dd8a5c1129843b2f1106c14ac4515a
     
     
     

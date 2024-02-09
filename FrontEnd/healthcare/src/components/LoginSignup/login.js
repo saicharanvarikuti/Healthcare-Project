@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import loginImage from '../Images/login.jpg'
+<<<<<<< HEAD
 import { Link, useNavigate } from "react-router-dom";
+=======
+import { useNavigate } from "react-router-dom";
+>>>>>>> c5aa4c5825dd8a5c1129843b2f1106c14ac4515a
 
 function Login() {
     const [email, setEmail] = useState('');
