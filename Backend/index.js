@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const router = express.Router();
 const port = 3000;
@@ -22,8 +23,11 @@ const adminRegisterApi = require('./admin_authentication/admin_register')
 const adminBookingManagementApi = require('./admin_routes/admin_booking_management')
 const deleteUserApi = require('./admin_routes/delete_user')
 const blockUserPartnerApi = require('./admin_routes/block_user_partner')
+const myProfileApi = require('./user_routes/userProfile')
+const enquireApi = require('./user_routes/enquiry')
 
 router.use(bodyParser.json());
+app.use(cors());
 
 app.use(loginApi);
 app.use(registerApi);
@@ -44,6 +48,8 @@ app.use(adminRegisterApi)
 app.use(adminBookingManagementApi)
 app.use(deleteUserApi)
 app.use(blockUserPartnerApi)
+app.use(myProfileApi)
+app.use(enquireApi)
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

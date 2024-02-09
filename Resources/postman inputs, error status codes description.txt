@@ -60,11 +60,16 @@ search
 
 scheduleAppointment
 {
-	"DOCTOR_ID": "1",
-	"DATE":"2024-01-10",
-	"LOCATION": "bengaluru",
-	"USER_REMARKS": "pain in left ear"
-	}
+    "patientName": "user1patient",
+    "gender": "Male",
+    "DOB": "2024-02-04",
+    "weight": 65,
+    "address": "ABC address",
+    "mobileNumber": 848558,
+    "appointmentDate": "2024-02-04",
+    "symptoms": "injury",
+    "partnerId": 1
+}
 
 
 delete express()
